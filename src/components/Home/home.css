@@ -1,0 +1,124 @@
+.main-home {
+    background-color: #191919;
+}
+
+.home {
+    color: white;
+    height: calc(100vh - 90px);
+    position: relative;
+    overflow: hidden;
+}
+
+.image {
+    position: relative;
+    top: 0;
+    transform: translateY(-50%);
+    background-image: url(../../../public/assets/home/desktop/image-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.image img {
+    max-width: 100%;
+}
+
+.home .description {
+    z-index: 1;
+    position: relative;
+    width: calc(100% / 2);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.description .feature {
+    font-size: 1.1rem;
+    letter-spacing: 8px;
+    color: #8c8c8c;
+    font-weight: bold;
+}
+
+.description .title {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin: 1rem 0 0;
+}
+
+.description .info {
+    width: calc(100% - 100px);
+    color: #8c8c8c;
+    line-height: 1.5;
+}
+
+.see-product {
+    background-color: #d87d4a;
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+    transition: .3s;
+    border: none;
+    cursor: pointer;
+}
+
+.see-product:hover {
+    background-color: rgb(216, 125, 74, 50%);
+}
+
+@media (max-width:992px) {
+    .home {
+        text-align: center;
+    }
+
+    .home .image {
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url(../../../public/assets/home/tablet/image-header.jpg);
+        background-size: contain;
+
+    }
+
+    .home .description {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .description .info {
+        width: calc(100% - 10px);
+        margin: 1rem auto;
+    }
+}
+
+@media (max-width:609px) {
+
+    .home .image {
+        background-image: url(../../../public/assets/home/mobile/image-header.jpg);
+        top: 40%;
+    }
+
+    .description .feature {
+        font-size: .9rem;
+    }
+
+    .description .title {
+        font-size: 2rem;
+    }
+
+    .description .info {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width:375px) {
+    .home .description {
+        width: 100%;
+        top: 40%;
+
+    }
+}
